@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Download de Músicas</title>
+</head>
+<!-- estilos com css -->
+<style>
+    a{
+        display: inline-flex;
+        font-size: 20px;
+        border-radius: 50px;
+        margin: 7px;
+       background-color: hotpink;
+       
+    }
+    
+    body {
+        font-family:'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        border-style: solid;
+        border-width: 10px;
+       
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .lista-musica {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .lista-musica h2 {
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+    .lista-musica ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .lista-musica li {
+        margin-bottom: 0.5rem;
+    }
+
+    .lista-musica a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .lista-musica a:hover {
+        text-decoration: underline;
+    }
+    .segunda-secao{
+        position: relative;
+        left: 30px;
+        margin: 7px;
+    }
+    details{
+        position:relative ;
+        left: 30px;
+        margin: 4px;
+        padding: 10px;
+    }
+    footer{
+        position:relative ;
+        left: 30px;
+        margin: 4px;
+       
+    }
+</style>
+    <body>
+        <!-- Cabeçalho do site -->
+        <header>
+            <h1>SpotyFlix</h1>
+            <h2>Todas suas músicas preferidas em um só lugar</h2>
+        </header>
+        <main>
+            <!-- lista de musicas -->
+            <section class="lista-musica">
+                <ul>
+                    <li>
+                        <details>
+                            <summary>You -  Nils Frahm</summary>
+                            <p>Nils Frahm - Artista de Hamburg, Alemanha</p>
+                        </details>
+                        <audio controls autoplay loop>
+                            <source src="../assests/Nils Frahm - You.mp3" type="audio/mpeg">
+                        </audio>
+                        <a href="../assests/Com Truise - Cyanide Sisters.mp3" download>Download</a>
+                    </li>
+                   <li>
+                    <details>
+                        <summary>Cyanide Sisters -  Com Truise</summary>
+                        <p>Com Truise - Artista de Oneida, Madison County, New York, Estados Unidos</p>
+                    </details>
+                    <audio controls autoplay loop muted>
+                        <source src="../assests/Com Truise - Cyanide Sisters.mp3" type="audio/mpeg">
+                    </audio>
+                    <a href="../assests/Com Truise - Cyanide Sisters.mp3" download>Download</a>
+                   </li>
+                  <li>
+                    <details>
+                        <summary>Your First Light My Eventide -  The Echelon Effect</summary>
+                        <p>The Echelon Effect - The Echelon Effect ganhou vida em meio às longas noites de inverno de fevereiro de 2009</p>
+                    </details>
+                    <audio controls autoplay loop>
+                        <source src="../assests/The Echelon Effect - Your First Light My Eventide.mp3" type="audio/mpeg">
+                    </audio>
+                    <a href="../assests/The Echelon Effect - Your First Light My Eventide.mp3" download>Download</a>
+                </ul>
+                </div>
+            </section>
+
+            <!-- segunda seção -->
+            <section class="segunda-secao">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>Quem são os direitos autorais das músicas desse site?</summary>
+                    <p>Os direitos são reservados aos artitas das músicas, citados na pequena descrição inclusa em cada uma.</p> 
+                </details>
+                <details>
+                    <summary>Posso revender as músicas desse site?</summary> 
+                    <p>Não, a venda de direitos é reservada a empresas especializadas.</p>
+                </details>
+                <details>
+                    <summary>Posso usar as músicas do meu site em videos do Youtube?</summary> 
+                    <p>Somente se você comprar o direito de usa-lá. <a href="https://ativosreais.hurst.capital/royalties.musicais">Para mais informações</a></p>
+
+                </details>
+            </section>
+        </main>
+        <!-- rodapé -->
+        <footer>
+            <p>________________________________________________________________________________________________________________________________________________</p>
+            <p>&copy; 2023 Download de Músicas</p>
+            <p>Este site foi feito apenas com intuito para estudos de HTML</p>
+        </footer>
+</table>
+
+</html>
