@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Para sua Viagem</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/viagem.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body,
+        h1,
+        p {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        body {
+            background-color: var(--corFundo1);
+        }
+
+        /* Palheta de Cores*/
+        :root {
+            --corPrincipal:  #4A4873;
+            --corComplementar: #a29dee;
+            --corComplementar2: #F2A0BE;
+            --corContraste1: #f25E95;
+            --corContraste2: #A62F03;
+            --corNeutro1: white;
+            --corNeutro2: black;
+            --corFundo1: #26262b;
+            --corFundo2: #4A4873;
+        }
+
+        /* Cabecalho, Menu, Logo*/
+        .cabecalho {
+            background-color: var(--corPrincipal);
+        }
+
+        .barraNav {
+            display: flex;
+        }
+
+        .logo img {
+            width: 80px;
+            margin-left: 40px;
+
+        }
+
+        .menu {
+            width: 100%;
+            margin-right: 100px;
+            align-items: flex-end;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            margin-left: 15px;
+            font-size: 1.4em;
+        }
+
+        .linkMenu:link,
+        .linkMenu:visited {
+            color: var(--corNeutro1);
+            text-decoration: none;
+            font-weight: 100;
+
+        }
+
+        .linkMenu:hover,
+        .linkMenu:active {
+            color: var(--corContraste1);
+        }
+
+        /* Primeira Dobra - #Home*/
+        .secApresentacao {
+            background-image: url("../assets/1971537.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc(85vh);
+
+        }
+
+
+        .bgFiltro {
+            height: 100%;
+            width: 100%;
+            backdrop-filter: blur(2px) grayscale(0.6);
+        }
+
+        #ct3Titulo1 {
+            color: var(--corNeutro2);
+            font-size: 2em;
+            text-shadow: 0 0 3px var(--corComplementar);
+
+        }
+
+        #ct3Texto1 {
+            color: var(--corNeutro2);
+            font-size: 1em;
+            text-shadow: 0 0 3px var(--corComplementar);
+
+        }
+
+        /* Dobra informações - #informações */
+        .secCurso {
+            background-color: var(--corFundo2);
+            height: 100vh;
+        }
+
+        .card {
+            border: 3px solid var( --corContraste1);
+            border-radius: 15px;
+            background-color: var(--corComplementar2);
+
+            color: var(--corNeutro1);
+            width: 20%;
+            margin: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .card img{
+            width: 100%;
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+
+        .card h2{
+            width: 100%;
+            text-align: center;
+        }
+
+
+        /* Classes de uso Geral */
+        .verticalCentro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .linha {
+            display: flex;
+        }
+
+        .largura60 {
+            width: 60%;
+            height: 100%;
+        }
+
+        .largura40 {
+            width: 40%;
+            height: 100%;
+        }
+
+        .largura1200px {
+            width: 1200px;
+            margin: 0 auto 0 auto;
+        }
+         /* rodape */
+         .footer {
+            max-width: 1200px;
+            background-color: var(--corPrincipal);
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            
+     }
+    
+        footer p {
+            margin: 0 0 10px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <nav id="idNav" class="barraNav largura1200px">
+            <div class="logo">
+                <img src="../assets/airplane_1350120.png" alt="logo">
+            </div>
+            <div class="menu verticalCentro">
+                <ul class="linha">
+                    <li><a class="linkMenu" href="#home">Home</a></li>
+                    <li><a class="linkMenu" href="#informacoes">Informações</a></li>
+                    <li><a class="linkMenu" href="#depoimentos">Depoimentos</a></li>
+                    <li><a class="linkMenu" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Principal -->
+    <main>
+        <!-- Home -->
+        <section id="home" class="secApresentacao largura1200px">
+            <div id="ct1" class="bgFiltro linha">
+                <div id="ct2" class="largura60">
+                </div>
+                <div id="ct3" class="largura40 verticalCentro">
+                    <h1 id="ct3Titulo1" class="titulo1">Descubra novos horizontes </h1>
+                    <h1 id="ct3Titulo1" class="titulo1">Vivencie aventuras inesquecíveis</h1>
+                    <p id="ct3Texto1" class="texto1">Sua próxima jornada começa aqui!!!</p>
+
+                </div>
+            </div>
+        </section>
+        <!-- Razões pelo qual vale a pena fazer um planer -->
+        <section id="curso" class="secCurso largura1200px">
+            <h1>Algumas Razões para Ter um Planner de Viagem !!</h1>
+            <div class="linha">
+                <div class="card">
+                    <h2>Um bom planejamento economiza dinheiro!</h2>
+                </div>
+                <div class="card">
+                  <h2>Uma viagem começa antes de você chegar lá!</h2>
+                </div>
+                <div class="card">
+                    <h2>Planejar uma viagem é desenhar suas experiências!</h2>
+                </div>
+                <div class="card">
+                    <h2>Um bom planejamento economiza tempo!</h2>
+                </div>
+
+            </div>
+
+            <div class="linha">
+                <div class="card">
+                    <img class="badgeTec" src="../assets/jovem-mulher-se-preparando-para-uma-nova-viagem.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="../assets/jovem-planejando-uma-nova-aventura.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="../assets/vista-lateral-mulher-andando-enquanto-segura-sua-bagagem.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="../assets/mulher-sorridente-posando-na-bagagem.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="secDepoimentos largura1200px">
+
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer id="idContato largura1200px">
+        <div class="footer largura1200px">
+            <p>Entre em Contato conosco!</p>
+            <address>
+               Otto Renaux 123, Brusque - SC<br>
+                Telefone: (47) 3350-1234<br>
+                Email: info@viagenssa.com
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
