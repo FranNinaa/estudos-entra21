@@ -12,11 +12,17 @@
     <style>
         /* CSS Reset */
         body,
-        h1,
         p {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-
+            text-align: center;
+        }
+        h1{
+            margin: 0;
+            text-align: center;
+            font-size:200%;
+            padding: 30px;
+            color: var(--corComplementar2)
         }
 
         body {
@@ -25,7 +31,7 @@
 
         /* Palheta de Cores*/
         :root {
-            --corPrincipal:  #4A4873;
+            --corPrincipal: #F2CED8;
             --corComplementar: #a29dee;
             --corComplementar2: #F2A0BE;
             --corContraste1: #f25E95;
@@ -92,7 +98,7 @@
         .bgFiltro {
             height: 100%;
             width: 100%;
-            backdrop-filter: blur(2px) grayscale(0.6);
+            backdrop-filter: blur(2px);
         }
 
         #ct3Titulo1 {
@@ -110,13 +116,13 @@
         }
 
         /* Dobra informações - #informações */
-        .secCurso {
+        .secPlanner {
             background-color: var(--corFundo2);
             height: 100vh;
         }
 
         .card {
-            border: 3px solid var( --corContraste1);
+            border: 3px solid var(--corContraste1);
             border-radius: 15px;
             background-color: var(--corComplementar2);
 
@@ -127,13 +133,13 @@
             padding-bottom: 20px;
         }
 
-        .card img{
+        .card img {
             width: 100%;
             display: flex;
             margin: 0 auto 0 auto;
         }
 
-        .card h2{
+        .card h2 {
             width: 100%;
             text-align: center;
         }
@@ -149,6 +155,7 @@
 
         .linha {
             display: flex;
+            
         }
 
         .largura60 {
@@ -165,20 +172,22 @@
             width: 1200px;
             margin: 0 auto 0 auto;
         }
-         /* rodape */
-         .footer {
-            max-width: 1200px;
+
+        /* rodape */
+        .footer {
             background-color: var(--corPrincipal);
             color: #fff;
-            padding: 50px;
+            padding: 30px;
             text-align: center;
-            
-     }
-    
-        footer p {
-            margin: 0 0 10px 0;
+            font-size: 1em;
+            height: calc(15vh);
+
         }
 
+        footer p {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
     </style>
 </head>
 
@@ -216,14 +225,14 @@
             </div>
         </section>
         <!-- Razões pelo qual vale a pena fazer um planer -->
-        <section id="curso" class="secCurso largura1200px">
+        <section id="curso" class="secPlanner largura1200px">
             <h1>Algumas Razões para Ter um Planner de Viagem !!</h1>
             <div class="linha">
                 <div class="card">
                     <h2>Um bom planejamento economiza dinheiro!</h2>
                 </div>
                 <div class="card">
-                  <h2>Uma viagem começa antes de você chegar lá!</h2>
+                    <h2>Uma viagem começa antes de você chegar lá!</h2>
                 </div>
                 <div class="card">
                     <h2>Planejar uma viagem é desenhar suas experiências!</h2>
@@ -242,12 +251,12 @@
                     <img class="badgeTec" src="../assets/jovem-planejando-uma-nova-aventura.jpg" alt="">
                 </div>
                 <div class="card">
-                    <img class="badgeTec" src="../assets/vista-lateral-mulher-andando-enquanto-segura-sua-bagagem.jpg" alt="">
+                    <img class="badgeTec" src="../assets/vista-lateral-mulher-andando-enquanto-segura-sua-bagagem.jpg"
+                        alt="">
                 </div>
                 <div class="card">
                     <img class="badgeTec" src="../assets/mulher-sorridente-posando-na-bagagem.jpg" alt="">
                 </div>
-
             </div>
         </section>
 
@@ -255,13 +264,15 @@
         <section class="secDepoimentos largura1200px">
 
         </section>
+      
+       
     </main>
     <!-- Rodapé -->
     <footer id="idContato largura1200px">
         <div class="footer largura1200px">
             <p>Entre em Contato conosco!</p>
             <address>
-               Otto Renaux 123, Brusque - SC<br>
+                Otto Renaux 123, Brusque - SC<br>
                 Telefone: (47) 3350-1234<br>
                 Email: info@viagenssa.com
             </address>
