@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page Para sua Viagem</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/viagem.png">
+
+</head>
+<style>
+
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: rgb(18, 86, 232);
+        color: #fff;
+        padding: 10px 0;
+    }
+    nav li:hover{
+        background-color: #333;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin: 0 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .imagem {
+        text-align: center;
+        padding: 100px 0;
+        background-image: url("img/6345959.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    p{
+        text-align: center;
+    }
+    
+    .caracteristicas {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+    
+    .caracteristica {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .footer {
+        max-width: 1200px;
+        background-color:  rgb(18, 86, 232);
+        color: #fff;
+        padding: 50px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1200px;
+       
+    }
+    .imagens-diversas{
+        display: flex;
+        justify-content: space-between;
+
+       
+    }
+
+    footer p {
+        margin: 0 0 10px 0;
+    }
+    
+    address {
+        font-style: normal;
+    }
+    
+</style>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#idContato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+       <!-- Principal -->
+    <main>
+            <section class="imagem">
+                   <h1>Descubra Sua Próxima Aventura</br>Explore o Mundo Conosco</h1>
+            </section>
+        
+        <p>Algumas Razões para Ter um Planner de Viagem !!</p>
+
+        <section class="caracteristicas">
+            <article class="caracteristica">
+                <h2>Primeira Razão:</h2>
+                <p>Um bom planejamento economiza dinheiro !</p>
+            </article>
+
+            <article class="caracteristica">
+                <h2>Segunda Razão:</h2>
+                <p>Uma viagem começa antes de você chegar lá!</p>
+            </article>
+
+            <article class="caracteristica">
+                <h2>Terceira Razão:</h2>
+                <p>Planejar uma viagem é desenhar suas experiências</p>
+            </article>
+        </section>
+    </main>
+
+    <section class="imagens-diversas">
+       <!-- <img src="img/jovem-mulher-se-preparando-para-uma-nova-viagem.jpg" alt="mulher viajando">-->
+    </section>
+
+     <!-- Rodapé -->
+     <footer id="idContato">
+        <div class="footer">
+            <p>Entre em Contato conosco!</p>
+            <address>
+               Otto Renaux 123, Brusque - SC<br>
+                Telefone: (47) 3350-1234<br>
+                Email: info@viagenssa.com
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
