@@ -15,6 +15,7 @@ Este repositório é organizado da seguinte maneira:
 
 - **/projetos**: Aqui, você encontrará projetos maiores que serão atribuídos durante o curso. Cada projeto tem seu próprio diretório e documentação específica.
 
+- **/recursos**: Esta pasta inclui recursos adicionais, como notas de aula, links úteis, e-books recomendados e qualquer material que possa ajudar no seu aprendizado.
 
 - **/landing-page-viagens**: Nesta pasta, você encontrará os arquivos relacionados à criação de uma landing page para viagens, que é um dos projetos emocionantes do curso. Explore e contribua para aprimorar esta landing page.
 
